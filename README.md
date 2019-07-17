@@ -7,11 +7,13 @@
 Logs the type of each dispatched action to Sentry as "breadcrumbs" and attaches
 your last action and current Redux state as additional context.
 
-It's a rewrite of [raven-for-redux](https://github.com/captbaritone/raven-for-redux) but with new Sentry unified APIs.
+It's a fork of [redux-sentry-middleware](https://github.com/vidit-sh/redux-sentry-middleware) but with new Sentry unified APIs.
 
 ## Installation
 
-    npm install --save redux-sentry-middleware
+```
+    npm install --save @hh.ru/redux-sentry-middleware
+```
 
 ## Usage
 
