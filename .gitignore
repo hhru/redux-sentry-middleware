@@ -22,3 +22,6 @@ dist/
 
 # Jest
 coverage/
+
+# dev
+.idea
