@@ -20,7 +20,15 @@ const createSentryMiddleware = (Sentry, options = {}) => {
 
     Sentry.configureScope(scope => {
       scope.addEventProcessor((event, hint) => {
-        const state = store.getState();
+        let state = {};
+        try {
+          state = store.getState();
+        } catch (e) {
+          event.extra = {
+            ...event.extra,
+            storeIsDispatching: true,
+          };
+        }
 
         event.extra = {
           ...event.extra,
