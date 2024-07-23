@@ -1,6 +1,6 @@
 {
   "name": "@hh.ru/redux-sentry-middleware",
-  "private": false,
+  "private": true,
   "version": "1.1.3",
   "description": "Redux middleware for propagating Redux state/actions to use with new @sentry/browser and @sentry/node.",
   "main": "dist/index.cjs.js",
